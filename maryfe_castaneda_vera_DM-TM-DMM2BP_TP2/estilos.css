@@ -1,0 +1,166 @@
+/* ESTRUCTURA INICIAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: sans-serif;
+}
+
+body {
+  background: linear-gradient(#181b149f), url('imagenes/fondo_web/fondo.jpg') center / cover no-repeat fixed;
+}
+
+/* NAVBAR*/
+.navbar {
+  background-color: #2b3328;
+}
+
+.navbar-toggler {
+  border: none !important;
+  background: none !important;
+  padding: 0;
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.carousel-item img {
+  height: 100vh;
+  object-fit: cover;
+}
+
+.texto-logo {
+  color: rgb(238, 232, 170);
+  font-weight: bolder;
+  text-shadow: 0px 0px 12px rgb(139 125 69);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.texto_menu {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* SOBRE SHERLOCK */
+.textodeco {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #bfb2891f;
+  padding: 15px;
+  border-radius: 5px;
+}
+
+/* TEMPORADAS */
+.flip-card {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  margin: 0 auto;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform .6s;
+  transform-style: preserve-3d;
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  inset: 0;
+  backface-visibility: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+
+.flip-card-back {
+  transform: rotateY(180deg);
+  background: #ac8a4a9d;
+  color: #fff;
+  border-radius: var(--bs-border-radius) !important;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+
+/* PERSONAJES */
+
+.card {
+  border: none;
+}
+
+.card-img-top {
+  height: 400px;
+  object-fit: cover;
+}
+
+.card-body {
+  flex: 1 1 auto;
+  padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+  color: #1e331e;
+  background: #29372c52;
+  font-family: ui-monospace;
+}
+
+.modal-body {
+  background: #ebbc682b;
+}
+
+.pb-0 {
+  background: #fffdac7a;
+}
+
+.modal-texto-completo {
+  font-family: ui-monospace;
+}
+
+img[role="button"]:focus {
+  outline: none !important;
+  box-shadow: none !important;
+}
+
+/* cards ajuste para mobile */
+@media (max-width: 576px) {
+  .flip-card {
+    max-width: 100%;
+  }
+}
+
+
+/* FORMULARIO */
+
+.formulario {
+  background: linear-gradient(#181b149f), url(imagenes/fondo_footer/fondo.jpg);
+}
+
+.text_deco_titulos {
+  color: rgb(238, 232, 170);
+  font-weight: bolder;
+  text-shadow: 0px 0px 12px rgb(139 125 69);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.deco_sub {
+  color: #9ca18c;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+/* FOOTER */
+
+.footer {
+  background: linear-gradient(#181b149f), url(imagenes/fondo_web/fondo.jpg);
+}
